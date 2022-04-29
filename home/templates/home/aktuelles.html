@@ -1,0 +1,102 @@
+{% block aktuelles %}
+{% load static %}
+
+<style>
+    .subheader {
+        color: #71325A;
+        margin: 10px 0 0 0;
+        padding: 0;
+        text-align: left;
+        font-size: 28px;
+        color: #8b0000;
+    }
+
+    .special-font {
+        color: #A25082;
+        font-size: 32px;
+    }
+
+    .normal-font {
+        font-size: 24px;
+        font-colour: #000000;
+    }
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+        .aktuellesImg {
+            width: 50%;
+        }
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        .aktuellesImg {
+            width: 50%;
+        }
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        .aktuellesImg {
+            width: 40%;
+        }
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        .aktuellesImg {
+            width: 30%;
+        }
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        .aktuellesImg {
+            width: 30%;
+        }
+    }
+
+    .img {
+        width: 50%;
+    }
+</style>
+
+<!--color: #d65009;-->
+
+<div id="aktuelles" class="container">
+   <div">
+    <figure>
+      <img src="/static/img/MarcusSchaefer.png" alt="Marcus Schäfer" class="img" style="width:100%; margin-bottom:20px;"/>
+      <figcaption style="font-size:20px; line-height: 100%;">Zu Gast beim Liedfestival 2022: <br> Der international renommierte Liedsänger Marcus Schäfer</figcaption>
+    </figure>
+   </div>
+</div>
+
+<!--
+    <div id="aktuelles" class="container" style="margin-bottom: -100px; color: #8b0000;">
+        <!--border: 8px solid red;-->
+        <!--<p style="font-size: 26px; font-style: italic; color: #EE4B2B;">Hier geht es zu den <a href="#konzerte" style="font-weight: bold; font-size: 26px;">Konzertvideos</a></p>
+        <br>
+        <p class="subheader" style="color: #71325A;">Danke!</p> <br>
+
+        <p>Liebes Publikum, <br> <br>
+
+        <!-- das Liedfestival findet mit dem ursprünglich für 2020 geplanten Jubiläumsprogramm - 5 Jahre Festival - vom 1.- 9.Mai 2021 statt. Die Liederabende werden aufgrund der Pandemie aus der Erlöserkirche Harleshausen live im Internet gestreamt. Die Links dazu finden Sie weiter unten bei den jeweiligen Programmen. Die Konzerte sind kostenfrei über Youtube empfangbar.<br><br>
+
+        Da uns aber die Einnahmen aus den Eintrittskarten wegbrechen möchten wir um Ihre Unterstützung bitten. Ihre Spende kommt den Künstlern des Liedfestivals direkt zugute. Eine Spendenquittung kann ab 200€ ausgestellt werden. Für kleinere Spenden wird der Einzahlungsbeleg beim Finanzamt anerkannt.<br><br>
+
+        Das Spendenkonto kann hier erfragt werden:<br>
+        Traudl Schmaderer<br>
+        T.Schmaderer@web.de<br><br>
+        Sie können alternativ auch <a href="https://paypal.me/pools/c/8yryCVqUBh" target="_blank" style="font-weight: bold;">hier</a> über PayPal spenden.<br><br>
+
+        Vielen Dank für Ihre Unterstützung und uns allen wünschen wir ein großes musikalisches Fest!
+
+        das Liedfestival 2021 ist vorbei, es fand komplett online statt. Wir danken allen, die uns unterstützt haben und dem zahlreichen Publikum an den Bildschirmen, das unsere Konzerte gehört und kommentiert hat. Es war uns eine große Freude, wieder aufzutreten und wir freuen uns aufs nächste Jahr, beim Liedfestival 22 kann dann auch hoffentlich wieder in Präsenz gesungen und gespielt werden. Die Videos unserer Konzerte bleiben vorerst online und können unter den Links weiter unten gesehen werden.<br>
+        Weitere Eindrücke des Liedfestivals 21, Photos und Presse, werden hier ebenfalls in nächster Zeit veröffentlicht.
+        <br><br>
+        Es grüßen ganz herzlich Traudl Schmaderer & Michael Kravtchin & das piano.voce.ensemble</p>
+    </div>
+-->
+
+{% endblock %}

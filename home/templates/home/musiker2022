@@ -1,0 +1,127 @@
+{% block musiker2022 %}
+{% load static %}
+
+<!-- Container musiker2022 -->
+
+<style>
+    .dates{
+        font-size: 16px;
+        color: black;
+        margin: 0;
+        padding: 0;
+    }
+
+    .heading{
+        font-size: 20px;
+        color: #71325A;
+        margin: 0;
+        padding: 0;
+        margin-bottom: -10px;
+    }
+
+    .title{
+        font-size: 20px;
+        color: #71325A;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .info{
+        font: 16px/1.75 'open_sansregular', sans-serif;
+        color: black;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header{
+        color: #71325A;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size:32px;
+    }
+
+    .subheader{
+        color: #71325A;
+        margin: 10px 0 0 0;
+        padding: 0;
+        text-align: left;
+        font-size: 28px;
+    }
+
+    .bio{
+        font: 16px/1.75 'open_sansregular', sans-serif;
+        color: black;
+        margin: 0;
+        padding: 0;
+    }
+
+    .img {
+        float:left;
+        clear: both;
+        width: 25%;
+        height: 25%;
+        margin-right: 20px;
+    }
+</style>
+
+<div id="musiker2022" class="container" style="margin-top: -100px;">
+
+  <br>
+  <br>
+  <p class="subheader">piano.voce.ensemble</p>
+  <br>
+  <p class="bio">TRAUDL SCHMADERER <img src="/static/img/TraudlSchmaderer.jpg" alt="Traudl Schmaderer" class="img"> ist als Konzert- Oratoriums- und Liedsängerin bekannt und trat in den letzten Jahren mit anspruchsvollen und zugleich meisterhaft inter-pretierten Konzertprojekten hervor, so unter anderem beim Musikfest Kassel mit dem Zyklus La Bonne Chanson von Gabriel Fauré und dem Buch der hängenden Gärten von Arnold Schönberg und bei den Kasseler Musiktagen mit Ich, Hiob von Thomas Daniel Schlee.
+Ihre Gesangsausbildung erhielt sie in München bei Adalbert Kraus und Nurit Herzog-Gorén und im Rahmen von Meisterkursen bei Edith Mathis. Sie wirkte bei Uraufführungen zeitgenössischer Musik, bei zahlreichen Rundfunk- und CD-Einspielungen mit und tritt regelmäßig in vielen Orten Deutschlands auf. Neben ihrem umfangreichen Konzertrepertoire widmet sie sich zurzeit verstärkt der Kammermusik,  gibt Liederabende und konzertiert mit verschiedenen Kammermusikensembles.
+Seit Langem ist sie als Gesangspädagogin tätig, zunächst an der Staatlichen Hochschule für Musik Frankfurt/Main und seit einigen Jahren auch in Kassel. Sie ist Gründungsmitglied des piano.voce.ensembles, welches sie gemeinsam mit Künstlerkollegen 2015 aus der Taufe hob, um dem Kunstlied im Konzertleben in neuer Art und Weise Geltung und Gehör zu verschaffen. Zugleich fungiert sie seit 2015 als  künstlerische Leiterin des  Liedfestivals Kassel.
+</p>
+  <br>
+  <br>
+  <p class="bio">VERO MILLER<img src="/static/img/VeroMiller.jpg" alt="Vero Miller" class="img">, 1993 in Ulm geboren, ist ab der Spielzeit 2019/2020 Ensemblemitglied des Staatstheaters Kassel. Zuletzt übernahm sie die Titelrolle in Rossinis "La Cenerentola". Sie war in der Rolle des Hänsels in Humperdincks "Hänsel und Gretel" zu erleben und gab ihr Debüt als 2. Norn und Wellgunde in Wagners "Götterdämmerung".
+
+Im Mai 2019 debütierte sie an der Oper Leipzig in Dvořáks "Rusalka" als Küchenjunge. In derselben Rolle im März 2019 gab sie ihr Debüt an der Kölner Oper. Zuletzt sprang sie wiederholt am Landestheater Detmold als Dorabella in "Così fan tutte" ein.
+Die junge Mezzosopranistin debütierte Anfang 2018 am Staatstheater Mainz in Mozarts Oper „La clemenza di Tito“ als Annio. Kurz darauf war sie als Preziosilla in Verdis „La forza del destino“ am Stadttheater Gießen in einer konzertanten Aufführung zu erleben. Als Amalia in Umberto Giordanos "Mala vita" war sie zu Beginn der Spielzeit 2018/2019 erneut am Stadttheater Gießen zu Gast.
+In der Oper „Alcina“ von Händel, einer Produktion der Kammeroper Schloss Rheinsberg im Sommer 2016, war Vero Miller in der Partie der Bradamante zu sehen und im Juli 2017 als Hänsel in Humperdincks „Hänsel und Gretel“ mit der Jungen Oper Schloss Weikersheim.
+
+Sie arbeitete mit Dirigenten wie Michael Hofstetter, Christoph Gedschold, Patrick Lange, Ulf Schirmer, Gerd Schaller, Ian Fountain, Eraldo Salmieri, György Mészáros, Attilio Cremonesi, Samuel Hogarth, Daniel Grossmann, Jos Zegers, Alexander Hannemann, Mario Hartmuth und Francesco Angelico.
+Sie sang unter anderem mit Orchestern wie den Münchner Symphonikern, dem Gewandhausorchester Leipzig, dem Gürzenich-Orchester Köln, dem WDR Funkhausorchester, dem Bundesjugendorchester, dem Orchester des Staatstheaters am Gärtnerplatz, der Accademia di Monaco, dem Jewish Chamber Orchestra Munich, dem Orchester des Staatstheaters Braunschweig, dem Staatsorchester Kassel und dem Münchner Rundfunkorchester.
+​
+Ihre große Begeisterung für das Lied spiegelt sich in gemeinsamen Liederabenden mit ihrem Liedpartner Amadeus Wiesensee wieder. Im Herbst 2019 gaben sie gemeinsam ein Gedenkkonzert gegen Antisemitismus bei den Europäischen Wochen Passau.
+​
+Vero Miller absolvierte ihren Bachelor of Arts im Fach Gesang bei Prof. Hanno Müller-Brachmann an der Musikhochschule Karlsruhe. An der Theaterakademie August Everding in München setzte sie ihr Studium im Masterstudiengang Musiktheater/Operngesang in der Gesangsklasse von KS Prof. Christiane Iven fort und erweiterte ihre Ausbildung mit einem Masterstudiengang Konzert an der Hochschule für Musik und Theater München.
+Im Rahmen ihrer Ausbildung sang Vero Miller die Dorabella in Mozarts „Così fan tutte“ am Theater Koblenz (2014), im Prinzregententheater München die Partie der Frau Hinrichs in „Die arabische Nacht“ von Christian Jost (2016), die Penelope in „Ulisse“ nach Claudio Monteverdi (2016) und die Stewardess in der Oper „Flight“ von Jonathan Dove (2017).
+
+Meisterkurse besuchte sie u.a. bei Brigitte Fassbaender, Cheryl Studer, Júlia Várady, Wolfgang Rihm, Heinz Holliger und Klesie Kelly. Sie ist Stipendiatin der Stiftung „Yehudi Menuhin – Live Music Now“ und des Deutschen Bühnenvereins (2016) und wurde gefördert von der Walter Kaminsky-Stiftung sowie der Anja-Fichte-Stiftung.
+</p>
+
+<!-- <p class="bio">Die Mezzosopranistin MARIE-LUISE DREßEN<img src="/static/img/Marie-LuiseDressen.jpg" alt="Marie-Luise Dressen" class="img"> wurde in Torgau/Sachsen geboren und erhielt zunächst Violinunterricht, bevor sie von 2003-2009 an der Hochschule für Musik und Theater in Leipzig Gesang bei Prof. Elvira Dreßen und Prof. Roland Schubert studierte. In Meisterkursen arbeitete sie mit Christa Ludwig, Brigitte Fassbaender und Franz Grundheber.
+Von 2009 bis 2011 war Marie-Luise Dreßen Mitglied des Ensembles des Theaters Gera-Altenburg, wo sie unter anderem als Orlofsky („Die Fledermaus“), Komponist („Ariadne auf Naxos“) , Dejanira („Hercules“), Romeo („I Capuleti e i Montecchi“) und Nele („Ulenspiegel“) zu erleben war. 2010 übernahm sie die Partie der Sieglinde („Die Walküre“) in einer konzertanten Aufführung zum Abschluss der Richard-Wagner-Festtage in Leipzig, 2011 gastierte sie als Octavian an der Oper Malmö.
+Von 2011 bis 2016 war Marie-Luise Dreßen Ensemblemitglied am Theater Luzern, wo sie unter anderem als Orlando, Sesto („La clemenza di Tito“), Eliza („My Fair Lady“), Angelina („La cenerentola“), Ruggiero („Alcina“), Komponist („Ariadne auf Naxos“), Mercedes („Carmen“), Nancy („Albert Herring“), Adalgisa („Norma“), Valencienne („Die lustige Witwe“) und Mrs. Lovett („Sweeney Todd“) auftrat. Im Januar 2011 sang sie in einer Uraufführung von Simon Wills‘ „The stolen smells“ im Kampnagel unter der Leitung von Thomas Hengelbrock und mit dem NDR-Sinfonieorchester. 2015 debütierte sie am Theater Basel in der Hölderlin-Produktion von Peter Ruzicka und Vera Nemirova und sang die Hauptrolle der Fausta im Musiktheaterprojekt „Die Stimmen der Frauen vom Fluss“ von Howard Arman unter der Regie von Carlus Padrissa (Fura dels baus). Im Sommer 2017 sang sie die Freia („Das Rheingold“) mit der Beethovenakademie Krakau beim Kulturwaldfestival Blaibach und debütierte im November 2017 am Staatstheater Kassel als Hänsel – welchen sie auch unter der Leitung von Professor Ulf Schirmer mit dem Gewandhausorchester im Dezember 2016 sang. Ab der Saison 2017 bis 2019 war Marie-Luise Dreßen Ensemblemitglied am Staatstheater Kassel. Hier sang sie Bersi in " Andrea Chenier", Rosina im "Barbier von Sevilla", Frau Reich in "Die lustigen Weiber von Windsor", Hänsel, Wellgunde und Sierune im "Ring des Nibelungen", Baba the Turk in " Rakes Progress", Meg Page in "Falstaff" sowie diverse Konzerte unter der Leitung von GMD Francesco Angelico. 2018 debütierte sie an der Bastille in Paris als Blumenmädchen in "Parsifal" unter dem Dirigat von Philippe Jordan.Seit der Saison 19/20 arbeitet Marie-Luise Dreßen freischaffend. Im Sommer 2019 sang sie die 3. Dame in der "Zauberflöte" beim Festival im Steinbruch in St. Magarethen unter der Leitung von Karsten Januschke. Mit dieser Partie war sie auch am Teatro Real in Madrid unter der Leitung von Ivor Bolton im Winter 2020 zu erleben . 2020 sang sie Cherubino in "Le nozze di Figaro", sowie Meg Page in "Falstaff" am Theater Freiburg und wird im Winter 2020/ 21 mit der 3. Dame in der "Zauberflöte" und Rossweisse in der "Walküre" an die Bastille zurückkehren.
+Auch auf dem Konzertpodium gastiert Marie-Luise Dreßen regelmäßig als Altsolistin und arbeitet mit den Pianisten Alexander Schmalcz und Eric Schneider. Ihr Debüt beim Kissinger Sommer war im Juli 2017. Im Sommer 2019 wird sie dorthin zurückkehren. Mit dem WDR Chor sang sie die „Misa tango“ von Martin Palmeri unter der Leitung von Mariano Chiaccarini.
+Marie-Luise Dreßen erhielt 2010 den Theater-Oscar der Bühnen Altenburg, wurde im Jahr 2012 in Gera zum Theaterpublikumsliebling gewählt und erhielt 2014 den Prix Gala des Theaterclubs Luzern. 2013 wurde sie für ihre Interpretation des Sesto („La clemenza di Tito“) und 2014 für Ruggiero („Alcina“) in der Zeitschrift „Opernwelt“ als „Beste Nachwuchskünstlerin“ nominiert. Am Staatstheater Kassel wurde sie 2019 mit dem Irma-Jansa-Preis ausgezeichnet.
+</p>-->
+  <br>
+  <br>
+  <p class="bio">MUSA NKUNA <img src="/static/img/MusaNkuna.jpg" alt="Musa Nkuna" class="img"> wurde in Südafrika geboren und absolvierte ein Gesangsstudium an der University of South Africa. 1998 legte er seinen Bachelor of Music an der University of Durban-Westville ab und 1999 den Master of Music im Fach Komposition an der Rhodes-University. Sein Gesangsstudium vervollkommnete der Sänger mit dem Konzertdiplom am Conservatoire de Lausanne in der Schweiz. Dort sang der Tenor bereits erste Partien noch während seiner Ausbildung und konnte sich so auch als Konzertsänger einen Namen machen. Von 2002 bis 2004 hatte Musa Nkuna sein erstes Festengagement am Theater in Pforzheim. Danach ging er für weitere vier Jahre ans Opernhaus in Köln wo er in den großen Rollen des lyrischen Mozartfachs und Rossini zu hören war. 2011/12 war er am Staatstheater Schwerin engagiert. In den Spielzeiten 2012/13 und 2013/14 gehörte Musa Nkuna zum festen Ensemble des Staatstheaters Kassel. Hier sang er unter anderem Edwin ( Die Csárdásfürstin),
+Ferrando (Così fan tutte) und begeisterte als Tamino (Die Zauberflöte) sowie als Jonathan in Händels Saul. Zuletzt war er als Gast im 11. TJO-Projekt in Carl Orffs Der Mond. Musa Nkuna singt regelmäßig in Konzerte, Liederabende und Opern- produktionen in Belgien, Deutschland, Frankreich, Griechenland, Niederlande, Russland, Polen, Portugal, Schweiz, Spanien und Südafrika. Er ist auch als Komponist sehr aktiv und ist  Gründungsmitglied der  Kasseler Kompositionsinitiative.
+</p>
+  <br>
+  <br>
+  <p class="bio">CHRISTOPH KÖGEL <img src="/static/img/ChristophKögel.jpg" alt="Christoph Kögel" class="img"> begann mit privatem Gesangsunterricht bei Janet Hardy in Augsburg. Als Hospitant war er Mitglied der Opernschule des Leopold-Mozart-Konservatoriums, Augsburg und später, von 1984 bis 1986, Chorist im Opernchor der Städtischen Bühnen Augsburg. 1986 – 92 studierte er an der Staatlichen Hochschule für Musik und Darstellende Kunst Frankfurt am Main im Fach Opern-Gesang bei Prof. Martin Gründler und in der Liedklasse bei Prof. Charles Spencer. Meisterkurse bei Brigitte Fassbaender und Sena Jurinac schlossen sich an.
+Von 1993 bis 2004 war er teils fest, teils als Gast engagiert an den Städtischen Bühnen Osnabrück, Kaiserslautern (Pfalztheater), Städtischen Bühnen Lübeck, Staatstheater Mainz, Staatstheater Darmstadt und Zeitgenössische Oper Berlin/Komische Oper Berlin.
+Parallel war er immer auch als Lied- und Oratoriensänger und in wirkte in freien Kammeroperproduktionen der Vokalsolisten Frankfurt und der Kammeroper Frankfurt mit.  Zu seinem Repertoire gehören Oratorien von Telemann, Bach und Händel und Opernpartien wie Graf Almaviva (Hochzeit des Figaro), Valentin (Margarete), Guglielmo (Così fan tutte), Silvio (Der Bajazzo). Konzertreisen führten ihn nach Belgien, Ungarn, Estland, Lettland, Österreich, Israel, Frankreich und in die Schweiz.
+</p>
+  <br>
+  <br>
+  <p class="bio">MICHAEL KRAVTCHIN <img src="/static/img/MichaelKravtchin.jpg" alt="Michael Kravtchin" class="img"> wurde in Moskau geboren. Frankfurt, Hannover, Detmold und Freiburg sind die Stationen seiner Musikausbildung. Insbesondere seine Begegnung mit dem großen Pianisten Anatol Ugorski hat ihn musikalisch und künstlerisch geprägt. Michael Kravtchin ist Preisträger beim internationalen Klavierwettbewerb Cita di Cantù in Italien. Er erhielt auch den Kritikerpreis. Seine Beschäftigung mit der Musik von Franz Graf von Pocci führte 2007 zur Veröffentlichung einer CD mit Ersteinspielungen mehrerer Werke Poccis. Außerdem nahm er das erste Buch der Préludes von Debussy und Schumanns Carnaval auf. Er trat mehrmals beim Musikfest in Kassel auf. Eine CD mit französischer Klaviermusik erschien als Konzertmit schnitt aus der documenta-Halle Kassel. Als Kammermusiker von namhaften Solisten widmet er sich der ganzen Bandbreite des kammermusika- lischen Repertoires. Er ist Kulturpreisträger der Stadt Kassel. Seine Solo- und Kammermusiktätigkeit führt ihn auch regelmäßig ins europäische Ausland, u. a. in die Schweiz, nach Spanien und Frankreich. Michael Kravtchin leitet eine Klavierklasse an der Musikakademie „Louis Spohr“ der Stadt Kassel. Er ist Gründungsmitglied des piano.voce.ensembles. </p>
+  <br>
+  <br>
+  <p class="bio">ALBERTO BERTINO <img src="/static/img/AlbertoBertino.jpg" alt="Alberto Bertino" class="img"> 1991 erwarb Alberto Bertino, parallel zum Kompositionsstudium, das Diplom mit Auszeichnung im Fach Klavier am 	Conservatorio Statale di Musica Antonio Vivaldi  in Alessandria (Italien). Dabei gewann er den Preis Ghislieri als bestes Diplom des Jahrgangs sowie den Preis Accademia Filarmonica. Er setzte sein Studium an der Accademia Pianistica di Imola, bei Boris Petrushansky und Alexander Lonquich fort und belegte bedeutende Meisterklassen unter anderem bei Stanislav Bunin, Rosalyn Tureck, Dmitri Bashkirov, Tatjana Nikolajeva, Andràs Schiff und Mihail Voskressensky. Er studierte Orchesterdirigieren am Mozarteum Salzburg bei Michael Gielen und Klavier bei Peter Lang. Diese Studien (Klavier, Orchesterdirigieren und Komposition) setzte er in Turin (wo er ein Diplom erwarb) und Kattowitz (Polen) mit Andrzej Jasinski und Eugeniusz Knapik fort.
+1995 gewann er den ersten Preis beim Klavierwettbewerb Città di Cesenatico und 1999 den zweiten Platz beim Concorso Internazionale di Musica da Camera di Finale Ligure in den Kategorien Duo und Trio. Seit 2000 wird Bertino vom Polnischen Jugendorchester Karol Szymanowski regelmäßig eingeladen, um Proben zu dirigieren, zu unterrichten und Konzerte mit italienischer Sinfonik und als Operndirigent zu geben. Darüber hinaus hat er in größeren Theatern in Italien dirigiert (Turin, Bergamo, Alba, Ravenna, Lodi, Chieti usw.). Bertino gibt Meisterkurse für Klavier und Kammermusik in Italien und in Polen, und da er immer öfter mit Sängern arbeitete, ist er seit 2006 als Korrepetitor am Staatstheater Kassel engagiert, wo er bis heute tätig ist.
+In letzter Zeit ist er mit mehreren Kompositionen hervorgetreten: "Alma Redemptoris Mater”, "Gloria Tibi Trinitas” und "How make the day dawn?” wurden mit dem MDR-Rundfunkchor unter der Leitung von H. Arman in der Peterskirche in Leipzig uraufgeführt.
+Alberto Bertino ist seit April 2007 im Bereich Korrepetition an der Musikakademie der Stadt Kassel "Louis Spohr" tätig und seit 2012 als Leiter des Chores und des Orchester der Musikakademie. Seit Sommersemester 2012 leitet er zudem eine eigene Klavierklasse. Als Pianist hat er verschiedene Aufnahmen für den italienischen und polnischen Rundfunk gemacht, sowie eine Aufnahme für Naxos.
+</p>
+</div>
+
+{% endblock %}

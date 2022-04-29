@@ -1,16 +1,16 @@
 from django.shortcuts import render
-from django.contrib.auth.decorators import login_required
+#from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect
 
 from django.core.mail import send_mail
-from django.http import HttpResponse
+#from django.http import HttpResponse
 from django.utils import timezone
 
 from django.template import Context, Template
 
 from .models import Artist, MailTemplate, Sponsor, Concert, Gast, Footer
-from .forms import TicketReservationForm, TicketReservation2019Form, WorkshopReservationForm
-
+from .forms import TicketReservationForm, TicketReservation2021Form, WorkshopReservationForm, TicketReservation2022Form
+# from forms.py import TicketReservation2020Form
 
 # Create your views here.
 
@@ -49,13 +49,16 @@ def karten(request):
     footer = Footer.objects.filter()[:1].get()
 
     if request.method == "POST":
-        form = TicketReservation2019Form(request.POST)
+
+        # Formular mit Daten aus dem POST
+        form = TicketReservation2021Form(request.POST) # TicketReservation2021Form
+
         if form.is_valid():
-            reservation = form.save(commit=False)
+            reservation = form.save(commit=True) #False
             reservation.request_date = timezone.now()
             reservation.save()
 
-            temp = MailTemplate.objects.get(name='karten_bestaetigung_2019')
+            temp = MailTemplate.objects.get(name='karten_bestaetigung_2021') # karten_bestaetigung_2021
             t = Template(temp.text)
             c = Context({"r":reservation})
 
@@ -75,12 +78,15 @@ def karten(request):
                 ),
                 t.render(c),
                 "vorbestellung@liedfestival-kassel.de",
-                #['felix@werthschulte.info']
-                ["m.kravtchin@liedfestival-kassel.de",
-                "t.schmaderer@liedfestival-kassel.de"]
+                # ['felix@werthschulte.info']
+                #["m.kravtchin@liedfestival-kassel.de",
+                #"t.schmaderer@liedfestival-kassel.de"]
+                ["leo.kravtchin@gmail.com", "michael.kravtchin@gmail.com", "T.Schmaderer@web.de"]
+                # "michael.kravtchin@gmail.com",
+                # "T.Schmaderer@web.de"
             )
 
-            return render(request, 'home/karten_neu.html',
+            return render(request, 'home/karten_2021.html', # auch für 2022, nur neue Klassen & Forms
                     {
                         'order_okay': True,
                         'footer': footer
@@ -88,9 +94,9 @@ def karten(request):
                 )
 
     else:
-        form = TicketReservation2019Form()
+        form = TicketReservation2021Form() # TicketReservation2021Form()
 
-    return render(request, 'home/karten_neu.html',
+    return render(request, 'home/karten_2021.html',
             {
                 'form': form,
                 'footer': footer
@@ -153,3 +159,9 @@ def favicon(request):
 
 def google(request):
     return redirect('/static/google/googleba5118c5e56500e9.html')
+
+def main():
+    karten(request)
+
+if __name__ == "__main__":
+    main()

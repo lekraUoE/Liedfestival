@@ -1,30 +1,220 @@
 {% block konzerte %}
+{% load static %}
 
-<!-- Container (KONZERTE Section) -->
-<div id="konzerte" class="bg-1">
-  <div class="container">
-    <h3 class="text-center">Konzerte</h3>
-    <div class="list-group">
-    {% for concert in concerts %}
-      <div class="list-group-item">
-        <p class="red" style="padding-bottom: 5px;">{{ concert.performance_date|date:"l, j. F Y, H"}}
-          Uhr<br />{{ concert.location }}</p>
-        <h4 class="bg-1">»{{ concert.title }}«</h3>
-          <p>{{ concert.subtitle }}</p>
-          <p>{{ concert.text|safe }}</p>
-          <p>Karten: {{ concert.ticket_prices }}</p>
-      </div>
-    {% endfor %}
+<style>
+    .dates{
+        font-size: 16px;
+        color: black;
+        margin: 0;
+        padding: 0;
+        line-height: 100%;
+    }
 
-    </div>
+    .heading{
+        font-size: 20px;
+        color: #71325A;
+        margin: 0;
+        padding: 0;
+        margin-bottom: -10px;
+    }
 
-    <div class="list-group">
-        <div class="list-group-item">
-            <p>Bis 18 Jahre freier Eintritt.<br/>
-            <strong>Gesamtpaket</strong> für alle 6 Konzerte des Liedfestivals 2020: 60 €</p>
-        </div>
-    </div>
-    <!--<button class="btn" name="Karten vorbestellen" onclick="location.href='karten/';">Karten vorbestellen</button>-->
-  </div>
+    .title{
+        font-size: 20px;
+        color: #71325A;
+        margin: 0;
+        padding: 0;
+    }
+
+    .info{
+        font: 16px/1.75 'open_sansregular', sans-serif;
+        color: black;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header{
+        color: #71325A;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size:32px;
+    }
+
+    .subheader{
+        color: #71325A;
+        margin: 10px 0 0 0;
+        padding: 0;
+        text-align: left;
+        font-size: 28px;
+    }
+
+    .bio{
+        font: 16px/1.75 'open_sansregular', sans-serif;
+        color: black;
+        margin: 0;
+        padding: 0;
+    }
+
+    .img {
+        float:left;
+        clear: both;
+        width: 25%;
+        height: 25%;
+        margin-right: 20px;
+    }
+
+    .link {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    #name {
+        margin-bottom: -10px;
+    }
+
+    @media (max-width: 480px) {
+        #pdf{
+            display: none;
+        }
+  }
+}
+</style>
+
+<br>
+
+<div id="konzerte" class="container" style="margin-top: -120px;">
+
+  <p class="header" style="text-align: left; font-size: 40px; line-height: 100%;">Liedfestival Kassel 1.&ndash;8. Mai 2022 <br> „Überlebenszeiten“</p> <br>
+
+  <strong><a href="/karten" style="font-size:24px;" target="_blank">Hier Karten vorbestellen</a></strong>
+  <br>
+  <br>
+
+  <p class="dates">Eröffnungskonzert: Sonntag, 1. Mai 2022, 20.00 Uhr <br> Ev. Erlöserkirche Kassel Harleshausen</p>
+  <p class="heading">KRÄMERSPIEGEL</p>
+  <p class="title" id="name">Lieder von Richard Strauss</p>
+  <p class="info">Traudl Schmaderer, Sopran · Markus Schäfer, Tenor · Matthias Veit, Klavier</p>
+  <a href="https://www.youtube.com/watch?v=T75GT1k7qCY" target="_blank" class="link">Link zum Konzertstream</a><br>
+  <br>
+
+  <p class="dates">Mittwoch, 4.Mai 2022, 20.00 Uhr <br> Ev. Erlöserkirche Kassel Harleshausen</p>
+  <p class="heading">CARL UND VERONIKA</p>
+  <p class="title">Carl Orff und die „Comedian Harmonists“ in der Interpretation der „Singphoniker“</p>
+  <p class="info"></p>
+  <a href="https://www.youtube.com/watch?v=9Ji2tzp2MJw" target="_blank" class="link">Link zum Konzertstream</a><br>
+  <br>
+
+  <p class="dates">Donnerstag, 5. Mai 2022, 20.00 Uhr <br> Ev. Erlöserkirche Kassel-Harleshausen</p>
+  <p class="heading">ERNSTE GESÄNGE</p>
+  <p class="title" style="margin: 5px 0px -5px 0px; line-height: 130%;">Johannes Brahms und Dmitri Schostakowitsch</p>
+  <p class="info"> Mischa Schelomianski, Bass · Michael Kravtchin, Klavier </p>
+  <a href="https://www.youtube.com/watch?v=jp-PqA-tRUs" target="_blank" class="link">Link zum Konzertstream</a><br>
+  <br>
+
+  <!-- „Babi Jar“ von Dimitri Schostakowitsch und weitere Lieder russischer Komponisten,
+  Vier Ernste Gesänge, Op. 121
+  -->
+
+  <p class="dates">Freitag, 6. Mai 2022, 20.00 Uhr <br> Ev. Erlöserkirche Kassel Harleshausen</p>
+  <p class="heading">STIMME DES ABENDS</p>
+  <p class="title" style="margin-bottom: -10px;">Felix Mendelssohn Bartholdy, Gustav Mahler, Erich Wolfgang Korngold, <br> Alexander von Zemlinsky</p>
+  <p class="info" style="margin-top: 0px;">Vero Miller, Mezzosopran · Paul Lugger, Klavier</p>
+  <a href="https://www.youtube.com/watch?v=b3voPnHQgnM" target="_blank" class="link">Link zum Konzertstream</a><br>
+  <br>
+
+  <!-- LIEDER JÜDISCHER KOMPONISTEN, , Arnold Schönberg-->
+
+  <p class="dates">Samstag, 7. Mai 2022, 11.00 Uhr <br> Ev. Erlöserkirche Kassel
+Harleshausen</p>
+  <p class="heading">JUNGES LIED</p>
+  <p class="title" style="margin: 5px 0px 0px 0px; line-height: 130%;">Junge Künstler stellen sich vor, u.a. Preisträger des Landeswettbewerbs Hessen <br> „Jugend musiziert“ in der Kategorie „Ensemblegesang“</p>
+  <a href="https://www.youtube.com/watch?v=FMdxzLjiGd4" target="_blank" class="link">Link zum Konzertstream</a><br>
+  <br>
+
+  <p class="dates">Ensemblekonzert: Sonntag, 8. Mai 2022, 20.00 Uhr <br> Ev. Erlöserkirche Kassel Harleshausen</p>
+  <p class="heading" style="margin-bottom: -5px;">AUS JIDDISCHER VOLKSPOESIE</p>
+  <p class="title" style="margin-bottom: -5px; line-height:130%;">Liedzyklus von Dimitri Schostakowitsch, <br> "Eine Moritat" - Liedzyklus von Jens Josef
+ <br>  <!-- in eigener Bearbeitung in jiddischer Sprache für Sopran, Alt, Tenor, Klavier
+„Quadrat“ Vokalquartette von Mendelssohn u.a. Komponisten --> </p>
+  <p class="info" style="margin-top: 10px; line-height:130%;">Traudl Schmaderer, Sopran · Vero Miller, Mezzosopran <br> Mechthild Seitz, Alt · Markus Schäfer, Tenor · Michael Kravtchin, Klavier</p>
+  <a href="https://www.youtube.com/watch?v=xkWdMsJ2i00" target="_blank" class="link">Link zum Konzertstream</a><br>
+  <br><br>
+
+  <object data="/static/media/KonzertProgramm.pdf" type="application/pdf" width="100%" height="750px" id="pdf"></object>
+
+  <!-- <iframe src="/static/media/KonzertProgramm.pdf" width="100%" height="750px"></iframe> -->
+
+  <!-- <embed type="application/pdf"
+      src="/static/media/KonzertProgramm.pdf"
+      width="100%"
+      height="750px"
+      title="Konzert Programm"> -->
+
+  <!-- <iframe width="100%" height="100%"
+    src="https://play.viostream.com/iframe/s0m3m3d14?playerKey=s0m3p14y3r"
+    frameborder="0" allowfullscreen="" style="position:absolute; top:0; left: 0">
+  </iframe> -->
+
+  <strong><a href="/static/media/KonzertProgramm.pdf" target="_blank" style="font-size: 20px">Konzert Programm öffnen</a></strong>
 </div>
+
+<!-- 2021 Version:
+
+<div id="konzerte" class="container" style="margin-top: -120px;">
+
+  <p class=subheader" style="font-size: 28px; color: #71325A; margin-bottom: -10px;">Konzerte Liedfestival</p>
+  <p class=subheader" style="font-size: 20px;">Erlöserkirche Harleshausen</p>
+  <p class=subheader" style="font-size: 16px; margin-top: -20px;">Karlshafener Str.4, 34128 Kassel</p>
+  <br>
+
+  <p class="dates">Eröffnungskonzert Samstag, 1. Mai 2021, 20Uhr</p>
+  <p class="heading">MEIN HERZ UND DEINE STIMME</p>
+  <p class="title">Komponistinnen der Romantik</p>
+  <p class="info">Lieder von Clara Schumann, Emilie Zumsteeg, Martha von Sabinin, Pauline Viardot-Garcia, Nadja Boulanger und Henriette Bosmans<br>Traudl Schmaderer, Sopran - Vera Weht, Klavier</p>
+  <a href="https://youtu.be/7UAkUtf9fGk" target="_blank" class="link">Link zum Konzertvideo</a><br>
+  <br>
+
+  <p class="dates">Sonntag, 2. Mai 2021, 20Uhr</p>
+  <p class="heading">DIE WINTERREISE</p>
+  <p class="title">Franz Schubert</p>
+  <p class="info">Gideon Poppe, Tenor (Deutsche Oper Berlin)<br>Jacques Ammon, Klavier (Leipzig)</p>
+  <a href="https://youtu.be/vQ5hdMpm9LU" target="_blank" class="link">Link zum Konzertvideo</a><br>
+  <br>
+
+  <p class="dates">Donnerstag, 6. Mai 2021, 20Uhr</p>
+  <p class="heading">KÖNNT ICH DICH IN LIEDERN PREISEN</p>
+  <p class="title">Liederabend</p>
+  <p class="info">Clara und Robert Schumann, Franz Schubert, Johannes Brahms, <br>
+  Hugo Wolf und Gustav Mahler<br>Johannes Schwarz, Bariton (Hannover)<br>Lukas Rommelspacher, Klavier (Frankfurt)</p>
+  <a href="https://youtu.be/WjbdQXiNtSg" target="_blank" class="link">Link zum Konzertvideo</a><br>
+  <br>
+
+  <p class="dates">Freitag, 7. Mai 2021, 20Uhr</p>
+  <p class="heading">JUNGES PODIUM</p>
+  <p class="info" style="margin-top: 5px;">Auftritt für junge Preisträgerinnen und Preisträger des Landeswettbewerbs »Jugend musiziert« 2021. <br> Erster Preis Wertung Duo Kunstlied: <br>
+  Eva Carlberg, Sopran - Arne Dietrich, Klavier <br>
+  Emma Kindinger, Sopran - Nils Caspar Hoppe, Klavier <br>
+  Klaviertrio Grimm <br>
+  Leah Marie Hann, Violine <br>
+  Noémie Maria Klages, Violoncello <br>
+  Torben Schott, Klavier
+  </p>
+  <a href="https://youtu.be/XDvmToY6O-E" target="_blank" class="link">Link zum Konzertvideo</a><br>
+  <br>
+
+  <p class="dates">Samstag, 8. Mai 2021, 20Uhr</p>
+  <p class="heading">DIE SCHÖNE MÜLLERIN</p>
+  <p class="title">Franz Schubert</p>
+  <p class="info">Musa Nkuna, Tenor - Michael Kravtchin, Klavier</p>
+  <a href="https://youtu.be/x9BBVEi0mjo" target="_blank" class="link">Link zum Konzertvideo</a><br>
+  <br>
+
+  <p class="dates">Sonntag, 9. Mai 2021, 20Uhr</p>
+  <p class="heading">FLAMMENAUGE, DUNKLES HAAR</p>
+  <p class="info" style="margin-top: 5px;">Im bereits traditionellen Ensemblekonzert zum Abschluss des Liedfestivals Kassel singt das piano.voce.ensemble Lieder von Robert Schumann, Johannes Brahms, Hugo Wolf und die Liebesliederwalzer von Johannes Brahms.<br>
+  Traudl Schmaderer, Sopran - Vero Miller, Mezzosopran - Musa Nkuna, Tenor - Christoph Kögel, Bariton - Michael Kravtchin, Klavier - Alberto Bertino, Klavier</p>
+  <a href="https://youtu.be/l90733MTer0" target="_blank" class="link">Link zum Konzertvideo</a><br>
+</div>
+-->
+<br>
 {% endblock %}

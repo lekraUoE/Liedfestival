@@ -93,11 +93,14 @@ em {
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.2)
 }
+
+/*
 @media (max-width: 600px) {
   .carousel-caption {
     display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
   }
 }
+*/
 
 .bg-1 {
     background: $gelb_dunkel;

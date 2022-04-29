@@ -1,0 +1,129 @@
+{% include 'home/header.html' %}
+
+{% include 'home/navbar-simple.html' %}
+
+<div class="container">
+    <h3>Liedfestival Kassel 2022</h3>
+    <h4 style="font-size: 28px;">Kartenvorbestellung</h4>
+
+    {% if order_okay %}
+    <p>Vielen Dank für Ihre Anmeldung! Bitte schauen Sie in Ihrem E-Mail-Postfach nach.</p>
+    <p>Sollten Sie innerhalb einiger Minuten keine Nachricht erhalten haben, setzen Sie sich bitte
+      <a href="mailto:vorbestellung@liedfestival-kassel.de">per E-Mail</a> mit uns in Verbindung.</p>
+    <p><a href="/">Zurück zur Hauptseite</a></p>
+    {% endif %}
+
+    {% if form %}
+    <p>Wir freuen uns über Ihr Interesse an den Konzerten im Rahmen des Liedfestivals Kassel. Zur Kartenvorbestellung bitten wir Sie, nachfolgendes Formular auszufüllen. Nach einem Klick auf »Karten bestellen« erhalten Sie umgehend eine Reservierungsbestätigung per E-Mail. Die Karten werden für Sie unter Berücksichtigung der im Mai geltenden Corona-Regeln an der Abendkasse hinterlegt und können ab eine Stunde vor Veranstaltungsbeginn abgeholt und bezahlt werden.
+<!--Falls Sie die Konzerte live im Internet verfolgen möchten, können Sie hier eine Streaming-Karte erwerben.--></p>
+      <br>
+    <p>Zurück zur <a href='https://www.liedfestival-kassel.de/' style="font-weight: bold;">Startseite.</a></p>
+    <p>&nbsp;</p>
+    <div class="list-group">
+      <div class="list-group-item">
+        <form method="POST" class="post-form">{% csrf_token %}
+          {{ form.non_field_errors }}
+          {{ form.source.errors }}
+          {{ form.source }}
+
+            <div class="row">
+              <div class="col-lg-12">
+                <h4 style="font-size: 28px;">Meine Kartenwünsche</h4>
+              </div>
+
+              <div class="col-lg-12">
+                <h5>Hinweis zum freiem Eintritt und Abonnement</h5>
+                <p><strong>Schüler</strong> (bis zur Vollendung des 18. Lebensjahres) haben <strong>freien Eintritt zu allen Konzerten.</strong><p></p>
+                <p><strong>Studenten und Pensinierte</strong> zählen als <strong>Ermäßigte</strong> - bitte Studentenausweis/Personalausweis mitbringen, danke!</p>
+                <p>Das Abonnement <strong>aller Konzerte</strong> im Rahmen des Liedfestivals 2022 ist zum Normalpreis
+                  von <strong>70,00€</strong> zu erwerben. Das Abonnement ist personengebunden und nicht übertragbar.</p>
+              </div>
+            </div>
+
+            <br>
+
+              <!--<div class="col-lg-12" style="padding-bottom: 25px">
+              <p>Darüber hinaus möchte ich folgende Einzelkarten vorbestellen:</p>
+              </div>-->
+
+              <div class="col-lg-12" style="padding-bottom: 25px">
+                <p>Für das Konzert »KRÄMERSPIEGEL« (01.05.22, 20:00):</p>
+                <p>{{ form.tickets_eroeffnung }} Karten zum Normalpreis à 18,00 €</p>
+                <p>{{ form.tickets_eroeffnung_erm }} Karten zum ermäßigten Preis à 8,00 €</p>
+                <!-- <p><input type="checkbox"> Link zum Livestream zum Preis von 10,00 €</p> -->
+              </div>
+              <div class="col-lg-12" style="padding-bottom: 25px">
+                <p>Für das Konzert »CARL UND VERONIKA« (04.05.22, 20:00):</p>
+                <p>{{ form.tickets_winterreise }} Karten zum Normalpreis à 18,00 €</p>
+                <p>{{ form.tickets_winterreise_erm }} Karten zum ermäßigten Preis à 8,00 €</p>
+                <!--<p><input type="checkbox"> Link zum Livestream zum Preis von 10,00 €</p>-->
+                <!-- irgendwann mal: {{ form.link_winterreise }} -->
+              </div>
+              <div class="col-lg-12" style="padding-bottom: 25px">
+                <p>Für das Konzert »ERNSTE GESÄNGE« (05.05.21, 20:00):</p>
+                <p>{{ form.tickets_liederabend }} Karten zum Normalpreis à 18,00 €</p>
+                <p>{{ form.tickets_liederabend_erm }} Karten zum ermäßigten Preis à 8,00 €</p>
+                <!--<p><input type="checkbox"> Link zum Livestream zum Preis von 10,00 €</p>-->
+              </div>
+              <div class="col-lg-12" style="padding-bottom: 25px">
+                <p>Für das Konzert »STIMME DES ABENDS« (06.05.21, 20:00):</p>
+                <p>{{ form.tickets_muellerin }} Karten zum Normalpreis à 18,00 €</p>
+                <p>{{ form.tickets_muellerin_erm }} Karten zum ermäßigten Preis à 8,00 €</p>
+                <!--<p><input type="checkbox"> Link zum Livestream zum Preis von 10,00 €</p>-->
+              </div>
+              <div class="col-lg-12" style="padding-bottom: 25px">
+                <p>Für das Konzert »JUNGES LIED« (07.05.21, <strong>11:00</strong>):</p>
+                <p>{{ form.tickets_jungeslied }} Karten (Eintritt frei)</p>
+                <!--<p><input type="checkbox"> Link zum Livestream (kostenlos)</p>-->
+              </div>
+              <div class="col-lg-12" style="padding-bottom: 25px">
+                <p>Für das Konzert »AUS JIDDISCHER VOLKSPOESIE« (08.05.21, 20:00):</p>
+                <p>{{ form.tickets_abschluss }} Karten zum Normalpreis à 18,00 €</p>
+                <p>{{ form.tickets_abschluss_erm }} Karten zum ermäßigten Preis à 8,00 €</p>
+                <!--<p><input type="checkbox"> Link zum Livestream zum Preis von 10,00 €</p>-->
+              </div>
+
+              <div class="col-lg-12" style="padding-bottom: 25px">
+                <p>Abonnement zum Sonderpreis:</p>
+                <p>{{ form.tickets_gesamtpaket }} Alle 6 Konzerte zum Preis von 70,00 € (keine Ermäßigung)</p>
+              </div>
+
+              <div class="container-fluid">
+            <div>
+              <h4 style="font-size: 28px;">Persönliche Daten</h4>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <p>{{ form.anrede.errors }}{{ form.anrede.label_tag }}<br />{{ form.anrede }}</p>
+                <p>{{ form.titel.errors }}{{ form.titel.label_tag }}<br />{{ form.titel }}</p>
+                <p>{{ form.first_name.errors }}{{ form.first_name.label_tag }}<br />{{ form.first_name }}</p>
+                <p>{{ form.last_name.errors }}{{ form.last_name.label_tag }}<br />{{ form.last_name }}</p>
+              </div>
+              <div class="col-lg-4">
+                <p>{{ form.strasse.errors }}{{ form.strasse.label_tag }}<br />{{ form.strasse }}</p>
+                <p>{{ form.hausnummer.errors }}{{ form.hausnummer.label_tag }}<br />{{ form.hausnummer }}</p>
+                <p>{{ form.plz.errors }}{{ form.plz.label_tag }}<br />{{ form.plz }}</p>
+                <p>{{ form.plz.errors }}{{ form.ort.label_tag }}<br />{{ form.ort }}</p>
+              </div>
+              <div class="col-lg-4">
+                <p>{{ form.tel.errors }}{{ form.tel.label_tag }}<br />{{ form.tel }}</p>
+                <p>{{ form.email.errors }}{{ form.email.label_tag }}<br />{{ form.email }}</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12">
+                <h4 style="font-size: 28px;">Ihre Nachricht (optional)</h4>
+              </div>
+              <div class="col-lg-12">{{ form.nachricht.errors }}{{ form.nachricht }}</div>
+          </div>
+          <button type="submit" class="btn btn-margin-top">Karten bestellen</button>
+        </form>
+      </div>
+    </div>
+    {% endif %}
+
+  </div>
+</div>
+
+{% include 'home/footer.html' %}

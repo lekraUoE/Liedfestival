@@ -1,9 +1,26 @@
 {% block carousel %}
 {% load static %}
+
+<style>
+    .carousel-caption {
+        font-size: 26px;
+        margin: -400px 0 200px 520px;
+    }
+
+    @media (max-width: 720px) {
+      .carousel-caption {
+        display: none;
+      }
+    }
+</style>
+
 <div id="titelbild">
         <img src="{% static 'img/vogel_cover.jpg' %}" class="carousel-inner" alt="Vogelgesang">
         <div class="carousel-caption">
-          5 Jahre Liedfestival Kassel / 9.-17. Mai 2020 / Romantisches Lied
+          Liedfestival Kassel 2022 <br> „Überlebenszeiten“ <br> 1. – 8. Mai 2022
+          <br>
+          <br>
+         <strong><a href="/karten" style="color: white" target="_blank">Karten vorbestellen</a></strong>
         </div>
 </div>
 {% endblock %}

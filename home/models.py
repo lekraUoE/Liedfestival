@@ -92,6 +92,161 @@ class TicketReservation2019(models.Model):
         )
 
 
+class TicketReservation2020(models.Model):
+    anrede = models.IntegerField(choices=ANREDE_CHOICES, default=1)
+    titel = models.CharField(max_length=15, default='', blank=True)
+    first_name = models.CharField(max_length=50, default='')
+    last_name = models.CharField(max_length=50, default='')
+    strasse = models.CharField(max_length=50, default='')
+    hausnummer = models.CharField(max_length=4, default='')
+    plz = models.CharField(max_length=5, default='')
+    ort = models.CharField(max_length=50, default='')
+    email = models.EmailField()
+    tel = models.CharField(max_length=20, default='', blank=True)
+
+    # Gesamtpaket
+    tickets_gesamtpaket = models.PositiveIntegerField(default=0)
+
+    # Eröffnungskonzert Samstag, 9. Mai 2020, 20 Uhr
+    tickets_eroeffnung = models.PositiveIntegerField(default=0)
+    tickets_eroeffnung_erm = models.PositiveIntegerField(default=0)
+
+    # Junges Lied Sonntag, 10. Mai 2020, 20 Uhr
+    tickets_jungeslied = models.PositiveIntegerField(default=0)
+    tickets_jungeslied_erm = models.PositiveIntegerField(default=0)
+
+    # Liederabend Schwarz Mittwoch, 13. Mai 2020, 20 Uhr
+    tickets_liederabend = models.PositiveIntegerField(default=0)
+    tickets_liederabend_erm = models.PositiveIntegerField(default=0)
+
+    # Winterreise Donnerstag, 14. Mai 2020, 20 Uhr
+    tickets_winterreise = models.PositiveIntegerField(default=0)
+    tickets_winterreise_erm = models.PositiveIntegerField(default=0)
+
+    # Die Schöne Müllerin Freitag, 15. Mai 2020, 20 Uhr
+    tickets_muellerin = models.PositiveIntegerField(default=0)
+    tickets_muellerin_erm = models.PositiveIntegerField(default=0)
+
+    # Abschluss Sonntag, 17. Mai 2020, 20 Uhr
+    tickets_abschluss = models.PositiveIntegerField(default=0)
+    tickets_abschluss_erm = models.PositiveIntegerField(default=0)
+
+    tickets_summe = models.FloatField(null=True, blank=True, default=0.0)
+
+    nachricht = models.TextField(default='', blank=True)
+    request_date = models.DateTimeField(blank=True, null=True)
+
+    def __str__(self):
+        return '{:%d.%m.%Y %H:%M} - {} {}'.format(
+            self.request_date,
+            self.first_name,
+            self.last_name
+        )
+
+class TicketReservation2021(models.Model):
+    anrede = models.IntegerField(choices=ANREDE_CHOICES, default=1)
+    titel = models.CharField(max_length=15, default='', blank=True)
+    first_name = models.CharField(max_length=50, default='')
+    last_name = models.CharField(max_length=50, default='')
+    strasse = models.CharField(max_length=50, default='')
+    hausnummer = models.CharField(max_length=4, default='')
+    plz = models.CharField(max_length=5, default='')
+    ort = models.CharField(max_length=50, default='')
+    email = models.EmailField()
+    tel = models.CharField(max_length=20, default='', blank=True)
+
+    # Gesamtpaket
+    tickets_gesamtpaket = models.PositiveIntegerField(default=0)
+
+    # Eröffnungskonzert Mein Herz und deine Stimme Samstag, 1. Mai 2021, 20 Uhr
+    tickets_eroeffnung = models.PositiveIntegerField(default=0)
+    tickets_eroeffnung_erm = models.PositiveIntegerField(default=0)
+
+    # Die Winterreise Sonntag, 02. Mai 2021, 20 Uhr
+    tickets_winterreise = models.PositiveIntegerField(default=0)
+    tickets_winterreise_erm = models.PositiveIntegerField(default=0)
+
+    # Könnt ich dich in Liedern preisen Donnerstag, 06. Mai 2021, 20 Uhr
+    tickets_liederabend = models.PositiveIntegerField(default=0)
+    tickets_liederabend_erm = models.PositiveIntegerField(default=0)
+
+    # Junges Lied Freitag, 07. Mai 2021, 20 Uhr
+    tickets_jungeslied = models.PositiveIntegerField(default=0)
+    tickets_jungeslied_erm = models.PositiveIntegerField(default=0)
+
+    # Die Schöne Müllerin Samstag, 8. Mai 2021, 20 Uhr
+    tickets_muellerin = models.PositiveIntegerField(default=0)
+    tickets_muellerin_erm = models.PositiveIntegerField(default=0)
+
+    # Flammenauge, dunkles Haar Sonntag, 9. Mai 2021, 20 Uhr
+    tickets_abschluss = models.PositiveIntegerField(default=0)
+    tickets_abschluss_erm = models.PositiveIntegerField(default=0)
+
+    tickets_summe = models.FloatField(null=True, blank=True, default=0.0)
+
+    nachricht = models.TextField(default='', blank=True)
+    request_date = models.DateTimeField(blank=True, null=True)
+
+    def __str__(self):
+        return '{:%d.%m.%Y %H:%M} - {} {}'.format(
+            self.request_date,
+            self.first_name,
+            self.last_name
+        )
+
+
+class TicketReservation2022(models.Model): # 2022
+    anrede = models.IntegerField(choices=ANREDE_CHOICES, default=1)
+    titel = models.CharField(max_length=10, default='', blank=True)
+    first_name = models.CharField(max_length=20, default='')
+    last_name = models.CharField(max_length=30, default='')
+    strasse = models.CharField(max_length=40, default='')
+    hausnummer = models.PositiveIntegerField(max_length=4, default='')
+    plz = models.PositiveIntegerField(max_length=5, default='')
+    ort = models.CharField(max_length=30, default='')
+    email = models.EmailField(max_length=30, default='')
+    tel = models.PositiveIntegerField(max_length=20, default='', blank=True)
+
+    # Gesamtpaket
+    tickets_gesamtpaket = models.PositiveIntegerField(default=0)
+
+    # Eröffnungskonzert KRÄMERSPIEGEL, 1. Mai 2022, 20 Uhr
+    tickets_eroeffnung = models.PositiveIntegerField(default=0)
+    tickets_eroeffnung_erm = models.PositiveIntegerField(default=0)
+
+    # CARL UND VERONIKA, 04. Mai 2022, 20 Uhr
+    tickets_winterreise = models.PositiveIntegerField(default=0)
+    tickets_winterreise_erm = models.PositiveIntegerField(default=0)
+
+    # ERNSTE GESÄNGE, 05. Mai 2022, 20 Uhr
+    tickets_liederabend = models.PositiveIntegerField(default=0)
+    tickets_liederabend_erm = models.PositiveIntegerField(default=0)
+
+    # STIMME DES ABENDS, 6. Mai 2022, 20 Uhr
+    tickets_muellerin = models.PositiveIntegerField(default=0)
+    tickets_muellerin_erm = models.PositiveIntegerField(default=0)
+
+    # Junges Lied Freitag, 07. Mai 2022, 11 Uhr, NO ENTRY FEE
+    tickets_jungeslied = models.PositiveIntegerField(default=0)
+    tickets_jungeslied_erm = models.PositiveIntegerField(default=0)
+
+    # AUS JIDDISCHER VOLKSPOESIE, 8. Mai 2021, 20 Uhr
+    tickets_abschluss = models.PositiveIntegerField(default=0)
+    tickets_abschluss_erm = models.PositiveIntegerField(default=0)
+
+    tickets_summe = models.FloatField(null=True, blank=True, default=0.0)
+
+    nachricht = models.TextField(default='', blank=True)
+    request_date = models.DateTimeField(blank=True, null=True)
+
+    def __str__(self):
+        return '{:%d.%m.%Y %H:%M} - {} {}'.format(
+            self.request_date,
+            self.first_name,
+            self.last_name
+        )
+
+
 class WorkshopReservation(models.Model):
     anrede = models.IntegerField(choices=ANREDE_CHOICES, default=1)
     titel = models.CharField(max_length=15, default='', blank=True)

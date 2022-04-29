@@ -1,0 +1,30 @@
+{% block konzerte %}
+
+<!-- Container (KONZERTE Section) -->
+<div id="konzerte" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">Konzerte</h3>
+    <div class="list-group">
+    {% for concert in concerts %}
+      <div class="list-group-item">
+        <p class="red" style="padding-bottom: 5px;">{{ concert.performance_date|date:"l, j. F Y, H"}}
+          Uhr<br />{{ concert.location }}</p>
+        <h4 class="bg-1">»{{ concert.title }}«</h3>
+          <p>{{ concert.subtitle }}</p>
+          <p>{{ concert.text|safe }}</p>
+          <p>Karten: {{ concert.ticket_prices }}</p>
+      </div>
+    {% endfor %}
+
+    </div>
+
+    <div class="list-group">
+        <div class="list-group-item">
+            <p>Bis 18 Jahre freier Eintritt.<br/>
+            <strong>Gesamtpaket</strong> für alle 6 Konzerte des Liedfestivals 2020: 60 €</p>
+        </div>
+    </div>
+    <button class="btn" name="Karten vorbestellen" onclick="location.href='karten/';">Karten vorbestellen</button>
+  </div>
+</div>
+{% endblock %}
